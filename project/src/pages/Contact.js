@@ -36,6 +36,7 @@ const Contact = () => {
                         type="text"
                         placeholder="Enter Your First Name"
                         name="firstName"
+                        required
                         onChange={changeHandler}
                         value={formData.firstName}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-[#8bc34a]"
@@ -49,6 +50,7 @@ const Contact = () => {
                         type="text"
                         placeholder="Enter Your Last Name"
                         name="lastName"
+                        required
                         onChange={changeHandler}
                         value={formData.lastName}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-[#8bc34a]"
@@ -62,6 +64,7 @@ const Contact = () => {
                         type="email"
                         placeholder="Enter Your Email"
                         name="email"
+                        required
                         onChange={changeHandler}
                         value={formData.email}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-[#8bc34a]"
@@ -74,6 +77,7 @@ const Contact = () => {
                     <textarea
                         placeholder="Enter Your Comments Here"
                         name="comments"
+                        required
                         onChange={changeHandler}
                         value={formData.comments}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-[#8bc34a] h-24"
