@@ -108,7 +108,7 @@ const Home = () => {
                     </div>
                     <div className="flex flex-col">
                         <img src="../bsp-product2.jpg" className='h-72 mb-5'></img>
-                        <div class="flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-center items-center">
                             <p className="font-sans font-medium text-sm mb-2 text-[#333333]">Health</p>
                             <p className="font-semibold text-lg font-merriweather mb-2">Hand Sanitizer</p>
                             <div className="flex mb-1">
