@@ -23,8 +23,8 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div>
-                <NavLink to="/">
-                    <div>Juice</div>
+                <NavLink to="/essentials">
+                    <div>Essentials</div>
                 </NavLink>
             </div>
         </div>

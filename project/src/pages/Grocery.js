@@ -35,7 +35,7 @@ const Grocery = () => {
         {
             loading ? (<Spinner/>) : 
             (
-                <div className="mt-20 w-full flex flex-wrap">
+                <div className="mt-20 w-full flex flex-wrap justify-around">
                     {   groceryItems && 
                         groceryItems.map((item) => {
                             return(
