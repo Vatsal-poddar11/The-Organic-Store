@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+
+    const {cart} = useSelector((state) => state);
+    const [totalAmount, setTotalAmount] = useState(0);
+
+    useEffect(() => {
+        setTotalAmount(cart.reduce((acc, curr) => acc + (curr.price || curr.amount * 7.5 || curr.id * 0.0005), 0));
+    }, [cart]);
+
+
   return (
     <nav className="bg-white w-full font-sans h-20 mx-auto flex justify-between text-[#333333] font-medium">
         <div className="flex space-x-10 ml-7 mt-4 items-center">
@@ -39,12 +49,16 @@ const Navbar = () => {
                     <div className="hover:text-[#8bc34a] transition ease-in duration-100">Contact</div>
                 </NavLink>
             </div>
-            <div className="flex items-center gap-x-3 text-[#8bc34a]">
-                <div>
-                    <p>$10.00</p>
+            <div className="flex items-center gap-x-3">
+                <div className="text-[#8bc34a]">
+                    <p>${totalAmount.toFixed(2)}</p>
                 </div>
                 <div>
-                    <FaShoppingCart />
+                    <NavLink to="/cart">
+                        <div>
+                            <FaShoppingCart className="hover:text-[#8bc34a] transition ease-in duration-100"/>
+                        </div>
+                    </NavLink>
                 </div>
             </div>  
             <div>

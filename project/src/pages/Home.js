@@ -29,7 +29,7 @@ const Home = () => {
                         Embrace sustainable agriculture for better health, environmental conservation, and local farming. Opt for natural produce to support eco-friendly practices and ensure a healthier future.
                     </p>
                     <div className="font-sans">
-                        <NavLink to="/">
+                        <NavLink to="/essentials">
                             <button className="bg-[#508810e1] transition ease-in duration-200 hover:bg-[#8bc34a] flex items-center gap-x-4 uppercase font-semibold text-white pl-6 pr-6 pt-3 pb-3 rounded-md ">
                                 <FaShoppingCart />
                                 <p>Shop Now</p>
@@ -138,7 +138,7 @@ const Home = () => {
                 </p>
             </div>
             <div className="font-sans mr-7">
-                <NavLink to="/">
+                <NavLink to="/everything">
                     <button className="bg-[#508810e1] transition ease-in duration-200 hover:bg-[#8bc34a] flex items-center gap-x-4 uppercase font-semibold text-white pl-6 pr-6 pt-3 pb-3 rounded-md ">
                         <FaShoppingCart />
                         <p>Shop Now</p>
@@ -174,7 +174,7 @@ const Home = () => {
                             <p className="mb-8 leading-tight font-merriweather text-center tracking-wide font-bold text-4xl">Deal Of The Day 15% Off On All Vegetables!</p>
                             <p className="text-md font-medium text-center mb-12">Today's Fresh Deal! Don't Miss Out on Nature's Best Savings!</p>
                             <div className="font-sans mr-7">
-                                <NavLink to="/">
+                                <NavLink to="/grocery">
                                     <button className="bg-[#508810e1] transition ease-in duration-200 hover:bg-[#8bc34a] flex items-center gap-x-4 uppercase font-semibold text-white pl-6 pr-6 pt-3 pb-3 rounded-md ">
                                         <FaShoppingCart />
                                         <p>Shop Now</p>
@@ -221,7 +221,7 @@ const Home = () => {
                             <p className="font-bold font-merriweather text-2xl mt-16 mb-8">Quick Links</p>
                             <div className="flex text-[#989494c4] font-sans flex-col font-semibold text-md mb-2">
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/">About</NavLink>
-                                <NavLink className="hover:text-white transition duration-200 ease-in" to="/">Cart</NavLink>
+                                <NavLink className="hover:text-white transition duration-200 ease-in" to="/cart">Cart</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/contact">Contact</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/">Home</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/everything">Shop</NavLink>
