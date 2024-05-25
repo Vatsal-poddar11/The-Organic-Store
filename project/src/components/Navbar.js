@@ -13,30 +13,30 @@ const Navbar = () => {
                 </div>
             </NavLink>
             <div className="flex">
-                <NavLink to="/">
-                    <div>Everything</div>
+                <NavLink to="/everything">
+                    <div className="hover:text-[#8bc34a] transition ease-in duration-100">Everything</div>
                 </NavLink>
             </div>
             <div>
                 <NavLink to="/grocery">
-                    <div>Groceries</div>
+                    <div className="hover:text-[#8bc34a] transition ease-in duration-100">Groceries</div>
                 </NavLink>
             </div>
             <div>
                 <NavLink to="/essentials">
-                    <div>Essentials</div>
+                    <div className="hover:text-[#8bc34a] transition ease-in duration-100">Essentials</div>
                 </NavLink>
             </div>
         </div>
         <div className="flex gap-x-10 mr-6 mt-4 items-center">
             <div>
                 <NavLink to="/">
-                    <div>About</div>
+                    <div className="hover:text-[#8bc34a] transition ease-in duration-100">About</div>
                 </NavLink>
             </div>
             <div>
                 <NavLink to="/contact">
-                    <div>Contact</div>
+                    <div className="hover:text-[#8bc34a] transition ease-in duration-100">Contact</div>
                 </NavLink>
             </div>
             <div className="flex items-center gap-x-3 text-[#8bc34a]">
@@ -48,7 +48,7 @@ const Navbar = () => {
                 </div>
             </div>  
             <div>
-                <FaUser />
+                <FaUser className="hover:text-[#8bc34a] transition ease-in duration-100"/>
             </div>
         </div>
         

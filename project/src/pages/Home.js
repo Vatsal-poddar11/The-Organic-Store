@@ -224,7 +224,7 @@ const Home = () => {
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/">Cart</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/contact">Contact</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/">Home</NavLink>
-                                <NavLink className="hover:text-white transition duration-200 ease-in" to="/">Shop</NavLink>
+                                <NavLink className="hover:text-white transition duration-200 ease-in" to="/everything">Shop</NavLink>
                             </div>
                         </div>
 
