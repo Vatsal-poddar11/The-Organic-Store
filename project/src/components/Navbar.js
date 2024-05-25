@@ -38,7 +38,7 @@ const Navbar = () => {
                 </NavLink>
             </div>
         </div>
-        <div className="flex gap-x-10 mr-6 mt-4 items-center">
+        <div className="flex gap-x-10 mr-10 mt-4 items-center">
             <div>
                 <NavLink to="/">
                     <div className="hover:text-[#8bc34a] transition ease-in duration-100">About</div>
@@ -49,14 +49,20 @@ const Navbar = () => {
                     <div className="hover:text-[#8bc34a] transition ease-in duration-100">Contact</div>
                 </NavLink>
             </div>
-            <div className="flex items-center gap-x-3">
+            <div className="flex items-center gap-3">
                 <div className="text-[#8bc34a]">
                     <p>${totalAmount.toFixed(2)}</p>
                 </div>
                 <div>
                     <NavLink to="/cart">
                         <div>
-                            <FaShoppingCart className="hover:text-[#8bc34a] transition ease-in duration-100"/>
+                            <FaShoppingCart className="text-[#333333] hover:text-[#8bc34a] text-xl transition ease-in duration-100"/>
+                            {
+                                cart.length > 0 && 
+                                <span className="absolute top-8 right-[5.5rem] bg-[#8bc34a] font-semibold text-[0.75rem] w-4 h-4 flex justify-center items-center animate-bounce rounded-full text-white">
+                                    {cart.length}
+                                </span>
+                            }
                         </div>
                     </NavLink>
                 </div>

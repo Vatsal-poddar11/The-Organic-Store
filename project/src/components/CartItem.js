@@ -22,7 +22,7 @@ const CartItem = ({item}) => {
             </div>
             <div className="flex flex-col">
                 <h1 className="text-lg font-semibold">{item.name || item.title.substring(0, 35) + `...`}</h1>
-                <p className="text-[#333333] text-md">${item.amount * 7.5 || item.price || item.id * 0.0005}</p>
+                <p className="text-[#333333] text-md">${(item.amount * 7.5 || item.price || item.id * 0.0005).toFixed(2)}</p>
             </div>
             <div className="ml-auto text-[#333333] hover:text-red-600 cursor-pointer" onClick={removeFromCart}>
                 <MdDelete className="w-8 h-8" />

@@ -83,7 +83,7 @@ const Home = () => {
                     <h2 className=" mt-20 text-center font-merriweather font-semibold text-4xl tracking-normal mb-8">Trending Products</h2>
                     <img src="..\logo-leaf-new.png" className="mb-12"></img>
                 </div>
-                <div className="ml-8 mr-8 flex gap-6">
+                <div className="ml-8 mr-8 flex gap-6 justify-center">
                     <div className="flex flex-col">
                         <img src="../bsp-product1.jpg" className='h-72 mb-5'></img>
                         <div class="flex flex-col justify-center items-center">
