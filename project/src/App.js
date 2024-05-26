@@ -7,6 +7,7 @@ import Grocery from './pages/Grocery';
 import OrganicClothes from './pages/OrganicClothes';
 import Everything from './pages/Everything';
 import Cart from './pages/Cart';
+import About from './pages/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/essentials" element={<OrganicClothes/>}></Route>
         <Route path="/everything" element={<Everything/>}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
       </Routes>
     </div>
   );

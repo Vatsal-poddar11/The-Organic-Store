@@ -220,7 +220,7 @@ const Home = () => {
                         <div>
                             <p className="font-bold font-merriweather text-2xl mt-16 mb-8">Quick Links</p>
                             <div className="flex text-[#989494c4] font-sans flex-col font-semibold text-md mb-2">
-                                <NavLink className="hover:text-white transition duration-200 ease-in" to="/">About</NavLink>
+                                <NavLink className="hover:text-white transition duration-200 ease-in" to="/about">About</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/cart">Cart</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/contact">Contact</NavLink>
                                 <NavLink className="hover:text-white transition duration-200 ease-in" to="/">Home</NavLink>

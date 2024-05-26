@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-x-10 mr-10 mt-4 items-center">
             <div>
-                <NavLink to="/">
+                <NavLink to="/about">
                     <div className="hover:text-[#8bc34a] transition ease-in duration-100">About</div>
                 </NavLink>
             </div>
